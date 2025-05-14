@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="./apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="newstyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="main">
+      <nav></nav>
+
+      <section class="allElems">
+        <header class="weather-header slide-in-top">
+  <div class="header1 fade-in">
+    <h4>14-May 2025</h4>
+    <h1>Saturday, 1:00 pm</h1>
+    <h4>Bhopal (MP)</h4>
+  </div>
+  <div class="header2 fade-in">
+    <h2>20 °C</h2>
+    <h3>Precipitation: 35%</h3>
+    <h3>Humidity: 65%</h3>
+    <h3>Wind: 10 km/h</h3>
+    <h4>Light Rain</h4>
+  </div>
+</header>
+
+
+        <div class="allFeatures">
+          <div class="todo elem" id="0">
+            <img src="./todo.png" alt="Todo List" />
+            <h2>ToDo list</h2>
+          </div>
+          <div class="daily elem" id="1">
+            <img src="./dailyplanner.png" alt="Daily Planner" />
+            <h2>Daily Planner</h2>
+          </div>
+          <div class="moti elem" id="2">
+            <img src="./motivation.png" alt="Motivation" />
+            <h2>Motivation</h2>
+          </div>
+          <div class="pomo elem" id="3">
+            <img src="./pomodoro.png" alt="Pomodoro Timer" />
+            <h2>Pomodoro Timer</h2>
+          </div>
+      
+        </div>
+      </section>
+
+      <!-- Todo List Section -->
+      <section class="fullElem todo-list-fullpage" id="0">
+        <button id="0" class="back"><i class="ri-close-large-line"></i></button>
+        <h2>Your Personalized Task List</h2>
+        <div class="todo-container">
+          <div class="addtask">
+            <form novalidate>
+              <h3>Add Task</h3>
+              <input
+                type="text"
+                id="task-input"
+                name="task"
+                required
+                minlength="3"
+                placeholder="Enter task"
+              />
+              <textarea
+                class="glossy-scrollbar"
+                name="details"
+                cols="30"
+                rows="5"
+                placeholder="Enter description"
+              ></textarea>
+              <div class="mark-imp">
+                <input type="checkbox" name="check-box" id="check-box" />
+                <label for="check-box">Mark as important</label>
+              </div>
+              <button type="submit">Add task</button>
+            </form>
+          </div>
+          <div class="allTask glossy-scrollbar"></div>
+        </div>
+      </section>
+
+      <!-- Daily Planner Section -->
+      <section class="fullElem daily-planner-fullpage" id="1">
+        <button id="1" class="back"><i class="ri-close-large-line"></i></button>
+        <h1>If You Fail to Plan, You Plan to Fail</h1>
+        <div class="daily-planner"></div>
+      </section>
+
+      <!-- Motivation Section -->
+      <section class="fullElem motivational-fullpage" id="2">
+        <button id="2" class="back"><i class="ri-close-large-line"></i></button>
+        <div class="motivation-container">
+          <div class="motivation-wrapper"></div>
+        </div>
+      </section>
+
+      <!-- Pomodoro Section (Placeholder) -->
+      <section class="fullElem pomodoro-fullpage" id="3">
+        <button id="3" class="back"><i class="ri-close-large-line"></i></button>
+        <h1>Study with me!</h1>
+        <div class="session">Work Session</div>
+        <div class="pomo-timer">
+          <h2>25:00</h2>
+          <button class="Start-timer">Start</button>
+          <button class="Pause-timer">Pause</button>
+          <button class="Reset-timer">Reset</button>
+        </div>
+      </section>
+
+      <!-- Daily Goals Section (Placeholder) -->
+     
+    </div>
+
+    <script src="newscript.js"></script>
+  </body>
+</html>
